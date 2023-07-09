@@ -1,0 +1,120 @@
+/* monty-hall.component.css */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-check-label {
+  margin-left: 8px;
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+}
+.result {
+  margin-top: 20px;
+}
+
+.result p {
+  margin: 0;
+}
+
+.result p:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result p:nth-child(2) {
+  margin-bottom: 5px;
+}
+
+.result p:last-child {
+  font-style: italic;
+  font-size: 14px;
+  color: #666;
+}
+
+.circle-progress {
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+
+.circle-progress-background {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 8;
+}
+
+.circle-progress-fill {
+  fill: none;
+  stroke: #007bff;
+  stroke-width: 8;
+  stroke-dasharray: 0;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.3s ease-in-out;
+}
+
+.circle-progress-label {
+  text-anchor: middle;
+  font-size: 24px;
+  font-weight: bold;
+  fill: #007bff;
+}
+
+.circle-progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

@@ -1,8 +1,16 @@
+using MontyHallGame.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(p => p.AddPolicy("cors", builder =>
+{
+	builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IGameService, GameService>();
 
 var app = builder.Build();
 
@@ -16,7 +24,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-
+app.UseCors("cors");
 
 app.MapControllerRoute(
 	name: "default",

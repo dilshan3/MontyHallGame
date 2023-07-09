@@ -31,7 +31,8 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -75,8 +76,7 @@
               "browserTarget": "MontyHallGame:build:production"
             },
             "development": {
-              "browserTarget": "MontyHallGame:build:development",
-              "proxyConfig": "proxy.conf.js"
+              "browserTarget": "MontyHallGame:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -132,5 +132,11 @@
       }
     }
   },
-  "defaultProject": "MontyHallGame"
+  "defaultProject": "MontyHallGame",
+  "cli": {
+    "analytics": false,
+    "cache":{
+      "enabled": false
+    }
+  }
 }
